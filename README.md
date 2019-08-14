@@ -47,7 +47,7 @@ If you need callback for click, progress, errors.
 nascaView.listener = object : NascaViewListener() {
     override fun onImageClicked(index: Int, url: String) {
         super.onImageClicked(index, url)
-        Log.d("onProgressChanged", "$index $url")
+        Log.d("onImageClicked", "$index $url")
     }
 
     override fun onProgressChanged(progress: Int) {
