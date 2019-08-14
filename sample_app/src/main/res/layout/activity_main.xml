@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="android.view.View"/>
+        <variable name="sources" type="java.util.List&lt;String>"/>
+        <variable name="progress" type="Integer"/>
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <com.mrt.nasca.NascaView
+                android:id="@+id/nasca"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:images="@{sources}"
+                app:nasca_zoomable="false"/>
+
+        <ProgressBar
+                android:progress="@{progress}"
+                android:visibility="@{progress == 0 || progress == 100 ? View.GONE : View.VISIBLE}"
+                android:layout_width="0dp" android:layout_height="10dp"
+                style="@android:style/Widget.DeviceDefault.ProgressBar.Horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+    </android.support.constraint.ConstraintLayout>
+</layout>
