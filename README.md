@@ -1,8 +1,8 @@
 # Nasca
 
-Nasca is high resolution image loading library for Android that wraps less memory usage, faster loading, caching, and easy to use callbacks. 
+Nasca is a high resolution image loading library using WebView for Android that enables less memory usage, faster loading, caching, and easier callbacks.
 
-Nasca supports loading, displaying various type images from network including animated gif, webp. Nasca includes a lite API that using your own WebView as ImageView. Nasca's primary focus is on making scrolling HUGE size images as smooth and fast as possible without using app memory.
+Nasca supports loading and displaying various types of images from networks that contain animated gifs and webp. Nasca includes a lite API that using your own WebView as ImageView. Nasca’s primary focus is to guarantee scrolling HUGE size images as smooth as possible without using too much app memory.
 
 Download
 -
